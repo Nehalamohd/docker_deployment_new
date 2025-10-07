@@ -1,0 +1,11 @@
+services:
+  ml-flask-api:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    restart: always
+
+#docker-compose up --build
+
